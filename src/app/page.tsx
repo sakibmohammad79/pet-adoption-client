@@ -1,7 +1,15 @@
-export default function Home() {
+import { Button, Typography } from "@mui/material";
+import React from "react";
+
+const Page = () => {
   return (
-    <div className="text-3xl font-bold text-center p-5 text-yellow-500">
-      Hello Next
-    </div>
+    <>
+      <Typography sx={{ color: "red" }}>Hello world</Typography>
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+    </>
   );
-}
+};
+
+export default Page;
